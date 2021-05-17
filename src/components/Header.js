@@ -1,13 +1,32 @@
 import React from "react";
 import styled from "styled-components";
-import {Link} from "gatsby";
+import { Link } from "gatsby";
 
 const Container = styled.header`
     width: 100%;
-    height; 50px;
+    height: 70px;
     border-bottom: 1px solid #f1f3f6;
     box-shadow: 1px 1px 2px rgba(233, 244, 255, 0.7);
+    padding: 22px 3rem 0;
+    margin-bottom: 1.5rem;
+    
+    h3 {
+        display: inline;
+    }
+    
+    ul {
+        display: inline;
+        float: right;
+    }
 `;
+
+const ListLink = (props) => (
+    <li style={{ display: `inline-block`, margin: `0 1rem 0 0`}}>
+        <Link to={props.to}>
+            {props.children}
+        </Link>
+    </li>
+);
 
 export default function Header(props) {
     const {
@@ -16,10 +35,14 @@ export default function Header(props) {
 
     return (
         <Container>
-            <h1>{title}</h1>
-            <Link to="/">Home</Link>
-            <Link to="/about/">About</Link>
-            <Link to="/contact/">Contact</Link>
+            <Link to="/" style={{ textShadow: `none`, backgroundImage: `none` }}>
+                <h3>{title}</h3>
+            </Link>
+            <ul>
+                <ListLink to="/">Home</ListLink>
+                <ListLink to="/about/">About</ListLink>
+                <ListLink to="/contact">Contact</ListLink>
+            </ul>
         </Container>
     );
 }
