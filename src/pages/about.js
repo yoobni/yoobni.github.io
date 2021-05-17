@@ -1,11 +1,13 @@
 import React from "react"
-import Header from "../components/header";
+import { Header, Layout } from "../components/";
 
 export default function About() {
     return (
-        <div style={{ color: `teal` }}>
+        <>
             <Header title="About here" />
-            <p>Such wow. Very React.</p>
-        </div>
-    )
+            <Layout style={{ color: `teal` }}>
+                <p>Such wow. Very React.</p>
+            </Layout>
+        </>
+    );
 }
