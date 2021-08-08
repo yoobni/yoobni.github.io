@@ -1,4 +1,5 @@
 module.exports = {
+    pathPrefix: "yoobni.github.io",
     plugins: [
         {
             resolve: `gatsby-plugin-typography`,
