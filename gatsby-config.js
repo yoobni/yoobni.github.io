@@ -1,4 +1,7 @@
 module.exports = {
+    siteMetadata: {
+        title: "Yoobni Blog!",
+    },
     pathPrefix: "yoobni.github.io",
     plugins: [
         {
@@ -6,6 +9,13 @@ module.exports = {
             options: {
                 pathToConfigModule: `src/utils/typography`,
             },
+        },
+        {
+            resolve: "gatsby-source-filesystem",
+            options: {
+                name: `blog`,
+                path: `${__dirname}/blog`,
+            }
         },
     ],
 }

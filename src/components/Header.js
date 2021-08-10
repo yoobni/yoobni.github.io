@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Link } from "gatsby";
+import { Link, useStaticQuery, graphql } from 'gatsby'
 
 const Container = styled.header`
     width: 100%;
@@ -28,13 +28,30 @@ const ListLink = (props) => (
     </li>
 );
 
-export default function Header(props) {
+const Header = ({ pageTitle = "", props }) => {
+    const data = useStaticQuery(graphql`
+        query {
+            site {
+                siteMetadata {
+                    title
+                }
+            }
+        }
+    `);
+
+    // const {
+    //     title = "Yoobni blog",
+    // } = props;
+
     const {
-        title = "Yoobni blog",
-    } = props;
+        title
+    } = data.site.siteMetadata;
+
+    console.log(title);
 
     return (
         <Container>
+            <title>{pageTitle} | {data.site.siteMetadata.title}</title>
             <Link to="/" style={{ textShadow: `none`, backgroundImage: `none` }}>
                 <h3>{title}</h3>
             </Link>
@@ -46,3 +63,5 @@ export default function Header(props) {
         </Container>
     );
 }
+
+export default Header;
