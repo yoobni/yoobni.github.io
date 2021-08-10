@@ -1,0 +1,2 @@
+(self.webpackChunkgatsby_starter_hello_world=self.webpackChunkgatsby_starter_hello_world||[]).push([[501],{262:function(e,t,n){"use strict";n.r(t),n.d(t,{default:function(){return a}});var l=n(7294),r=n(4636);function a(){return l.createElement(l.Fragment,null,l.createElement(r.A,{pageTitle:"Contact"},l.createElement("p",null,"Send us a message!")))}}}]);
+//# sourceMappingURL=component---src-pages-contact-js-6bb788f3b9e3c2e526b2.js.map
