@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{"Cuy+":function(e,n,t){"use strict";t.r(n),t.d(n,"default",(function(){return c}));var a=t("q1tI"),u=t.n(a),r=t("Kvkj");function c(){return u.a.createElement(u.a.Fragment,null,u.a.createElement(r.b,{pageTitle:"Contact"},u.a.createElement("p",null,"Send us a message!")))}}}]);
+//# sourceMappingURL=component---src-pages-contact-js-4cc5ef9860038fac2579.js.map
