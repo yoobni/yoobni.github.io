@@ -1,2 +1,0 @@
-(self.webpackChunkgatsby_starter_hello_world=self.webpackChunkgatsby_starter_hello_world||[]).push([[682],{5518:function(e,t,l){"use strict";l.r(t),l.d(t,{default:function(){return a}});var r=l(7294),n=l(4636);function a(){return r.createElement(r.Fragment,null,r.createElement(n.A,{style:{color:"teal"}},r.createElement("p",null,"Such wow. Very React.")))}}}]);
-//# sourceMappingURL=component---src-pages-about-js-fd8dc557f05becdc0665.js.map
